@@ -12,7 +12,7 @@ require "csv" # CSVファイルを扱うためのライブラリを読み込ん�
     puts "メモしたい内容を入力してください"
     puts "完了したらCtrl+Dを押します"
     memo = $stdin.read
-    CSV.open("#{file_name}.csv","w") do |memo|
+    CSV.open("#{file_name}.csv","w") do |csv|
       csv << ["#{memo}"]
     end
   
